@@ -1,0 +1,13 @@
+<form>
+  <div>
+    <label for="title">Title:</label>
+    <input name="title" #newtitle> <!--Aggiunta una variabile di template-->
+  </div>
+  <div>
+    <label for="spam">Link:</label>
+    <input name="spam" #spam> <!--Aggiunta una variabile di template-->
+  </div>
+  <button (click)="addArticle(newtitle,spam)" class="btn btn-primary"> <!--Passiamo le variabili come parametro --> 
+  Submit link
+  </button>
+</form>
